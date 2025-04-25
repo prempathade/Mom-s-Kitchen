@@ -1,0 +1,246 @@
+.navbar{
+  background-color: orange;
+  
+}
+.nav-link{
+  color: green;
+}
+
+.nav-item{
+  padding-left: 160px;
+  font-size: 20px;
+}
+.box{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+img{
+    height: 120px;
+    width: 120px;
+}
+img:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+    
+  }
+  
+  
+ 
+
+  a{
+    color: red;
+    
+  }
+
+  .box2{
+    height: 240px;
+    margin: 50px;
+  }
+
+  .box3{
+    display: block;
+    height: 150px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+  }
+  
+.box4{
+  height: 240px;
+  margin-left: 10px;
+  border: 1px solid black;
+  margin-top: -16px;
+}
+
+.box5{
+  
+    display: block;
+    height: 150px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+
+h1{
+  text-shadow: 2px 2px 5px #00ff62;
+}
+
+h2{
+  text-shadow: 2px 2px 5px #00ff62;
+  margin-left: 100px;
+}
+
+.box6{
+  margin-left: -80px;
+}
+
+.box7{
+  display: flex;
+  justify-items: center;
+ justify-content: space-evenly;
+ background-color: azure;
+}
+
+
+p{
+  text-align: center;
+}
+
+
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  #u1{
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .prev, .next {
+      font-size: 18px;
+      padding: 12px;
+  }
+
+  .text-content {
+      padding: 10px;
+  }
+}
+
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .item {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row on smaller screens */
+      max-width: calc(50% - 20px); /* 2 items per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+      flex: 1 1 100%; /* 1 item per row on very small screens */
+      max-width: 100%; /* 1 item per row on very small screens */
+  }
+}
+
+@media screen and(max-width: 480px) {
+   .next{
+   margin-left: 80px;
+  }
+}
+
+  @media (max-width: 1200px) {
+    .header {
+      padding: 1.5rem 2rem;
+    }
+
+  }
+  
+  @media (max-width: 991px) {
+    html {
+      font-size: 55%;
+    }
+    .header #menu-btn {
+      display: inline-block;
+    }
+    .header .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      border-top: var(--border);
+      border-bottom: var(--border);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      -webkit-transition: .2s linear;
+      transition: .2s linear;
+    }
+    .header .navbar.active {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+      display: block;
+      margin: 2rem;
+    }
+  }
+  
+  @media (max-width: 667px) {
+    .header .search-form {
+      width: 90%;
+    }
+    .header .login-form {
+      width: 90%;
+    }
+    .projects{
+      margin-top: 30px;
+    }
+    .blogs{
+      margin-top: 30px;
+      height: 400px;
+    }
+    .contact{
+      margin-top: 10px;
+    }
+    .container{
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 50%;
+    }
+    .about .row .content h3 {
+      font-size: 2.5rem;
+    }
+    .amenities .amenities-slider{
+        justify-content: space-between 30px;
+        padding: 2rem 12rem;
+      }
+      .amenities .slide .content h3{
+        margin-top: -40px;
+        margin-left: 20px;
+      }
+      .amenities .slide .content{
+        margin-left:  80px;
+      }
+      .amenities .slide .image img{
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+      }
+      .amenities .slide{
+        margin-left: -70px;
+        padding: 10px 10px;
+        width: 100px;
+      }
+      .home .slide {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+      }
+      .home .slide .content {
+        text-align: center;
+      }
+      .home .slide .content h3 {
+        font-size: 3rem;
+      }
+  }
+
+  @media only screen and (min-width: 768px) {
+    #i1{
+     margin-right: 2000px;
+    }
+  }
